@@ -64,6 +64,8 @@ BEGIN_MESSAGE_MAP(CWAV2PCMDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BU_CREATE, &CWAV2PCMDlg::OnBnClickedBuCreate)
+	ON_BN_CLICKED(IDC_BU_SCAN, &CWAV2PCMDlg::OnBnClickedBuScan)
 END_MESSAGE_MAP()
 
 
@@ -152,3 +154,17 @@ HCURSOR CWAV2PCMDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CWAV2PCMDlg::OnBnClickedBuCreate()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	MessageBox(L"hello");
+}
+
+
+void CWAV2PCMDlg::OnBnClickedBuScan()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	MessageBox(L"hello");
+}
